@@ -97,9 +97,9 @@
   </nav>
   
   <main id="Main-content">
-  <section class="section" id="about">
+  <section aria-labelledby="about-heading" class="section" id="about">
     <div class="section-heading has-text-centered">
-      <h2 class="title is-2">About Us</h2>
+      <h2 id="about-heading" class="title is-2">About Us</h2>
       <div class="subtitle is-5">We of all trades, master of "some"</div>
       <div class="container">
         <p>Web developers with more than <strong>4 years</strong> of well-rounded experience with a degree in the
@@ -202,7 +202,7 @@
     </div>
   </section>
 
-  <section class="hero has-background-grey-light">
+  <section aria-label="Key features" class="hero has-background-grey-light">
     <div class="container features">
       <div class="section-heading has-text-centered">
         <h2 class="title is-2">Three key features</h2>
@@ -259,7 +259,7 @@
     </div>
   </section>
 
-  <section class="hero is-info">
+  <section aria-label="List of topics" class="hero is-info">
     <div class="hero-body">
       <div class="container">
         <h2 class="title">List of topics</h2>
@@ -267,20 +267,20 @@
       </div>
     </div>
     <div class="tabs is-boxed is-centered main-menu" id="nav">
-      <ul>
-        <li data-target="pane-1" id="1" class="is-active">
+      <ul role="tablist">
+        <li data-target="pane-1" id="1" class="is-active" role="tab">
           <a tabindex="0" class="tab-fix">
             <span class="icon is-small"><span class="fa fa-image" aria-hidden="true"></span></span>
             <span>Pictures</span>
           </a>
         </li>
-        <li data-target="pane-3" id="3">
+        <li data-target="pane-3" id="3" role="tab">
           <a tabindex="0" class="tab-fix">
             <span class="icon is-small"><span class="fab fa-superpowers" aria-hidden="true"></span></span>
             <span>Team</span>
           </a>
         </li>
-        <li data-target="pane-4" id="4">
+        <li data-target="pane-4" id="4" role="tab">
           <a tabindex="0" class="tab-fix">
             <span class="icon is-small"><span class="fa fa-film" aria-hidden="true"></span></span>
             <span>Video</span>
@@ -291,7 +291,7 @@
   </section>
 
   <div class="tab-content container">
-    <div class="tab-pane is-active level" id="pane-1">
+    <div class="tab-pane is-active level" id="pane-1" role="tabpanel">
       <div class="container">
         <div class="columns features">
           <div class="column is-4">
@@ -305,7 +305,7 @@
                 <div class="content">
                   <div>Click on image above</div>
                   <p lang="la">Purus semper eget duis at tellus at urna condimentum mattis. Non blandit massa enim nec. Integer enim neque volutpat ac tincidunt vitae semper quis. Accumsan tortor posuere ac ut consequat semper viverra nam.</p>
-                  <button class="button is-link modal-button" data-target="modal-image1" aria-haspopup="true">Image modal</button>
+                  <button class="button is-link modal-button" data-target="modal-image1" aria-haspopup="true" aria-owns="modal-image1">Image modal</button>
                 </div>
               </div>
             </div>
@@ -322,7 +322,7 @@
                   <div lang="la">Tempor orci dapibus ultrices in.</div>
                   <p lang="la">Ut venenatis tellus in metus vulputate. Amet consectetur adipiscing elit pellentesque. Sed arcu non odio euismod lacinia at quis risus. Faucibus turpis in eu mi bibendum neque egestas cmonsu songue. Phasellus vestibulum lorem
                     sed risus.</p>
-                  <button class="button is-link modal-button" data-target="modal-card" aria-haspopup="true">Modal Card</button>
+                  <button class="button is-link modal-button" data-target="modal-card" aria-haspopup="true" aria-owns="modal-card">Modal Card</button>
                 </div>
               </div>
             </div>
@@ -338,7 +338,7 @@
                 <div class="content">
                   <div>Click anywhere on card</div>
                   <p lang="la">Imperdiet dui accumsan sit amet nulla facilisi morbi. Fusce ut placerat orci nulla pellentesque dignissim enim. Libero id faucibus nisl tincidunt eget nullam. Commodo viverra maecenas accumsan lacus vel facilisis.</p>
-                  <button class="button is-link modal-button" data-target="modal-image2" aria-haspopup="true">Image modal</button>
+                  <button class="button is-link modal-button" data-target="modal-image2" aria-haspopup="true" aria-owns="modal-image2">Image modal</button>
                 </div>
               </div>
             </div>
@@ -347,7 +347,7 @@
       </div>
     </div>
 
-    <div class="tab-pane" id="pane-3">
+    <div class="tab-pane" id="pane-3" role="tabpanel">
       <div class="columns medias">
         <div class="column">
           <div class="media">
@@ -408,7 +408,7 @@
       </div>
     </div>
 
-    <div class="tab-pane" id="pane-4">
+    <div class="tab-pane" id="pane-4" role="tabpanel">
       <div class="columns is-centered">
         <div class="column is-three-quarters">
           <div class="title has-text-centered">Inspired video</div>
@@ -420,7 +420,7 @@
     </div>
   </div>
 
-  <section class="section has-background-grey-lighter">
+  <section aria-label="Upcoming events" class="section has-background-grey-lighter">
     <div class="container has-text-centered">
         <div class="section-heading has-text-centered">
           <h2 class="title is-2">Upcoming events</h2>
@@ -495,7 +495,7 @@
     </div>
   </section>
 
-  <section class="section">
+  <section aria-label="Services" class="section">
     <div class="section-heading has-text-centered">
       <h2 class="title is-2">Services</h2>
       <div class="subtitle is-5">What can I do for you?</div>
@@ -543,7 +543,7 @@
     </div>
   </section>
 
-  <section class="section has-background-grey-lighter">
+  <section aria-label="Photos from past events" class="section has-background-grey-lighter">
     <div class="container">
       <div class="section-heading has-text-centered">
         <h2 class="title is-2">Photos from past events</h2>
@@ -708,7 +708,7 @@
     </div>
   </section>
 
-  <section class="section">
+  <section aria-label="Forum" class="section">
     <div class="container">
       <header class="section-heading has-text-centered">
         <h2 class="title is-2">Forum</h2>
@@ -880,7 +880,7 @@
     </div>
   </section>
 
-  <section class="section has-background-light">
+  <section aria-label="Contact us" class="section has-background-light">
     <div class="container">
       <div class="section-heading has-text-centered">
         <h2 class="title is-2">Contact us</h2>
@@ -891,14 +891,14 @@
         <div class="field">
           <label class="label" for="name">Name</label>
           <div class="control">
-            <input id="name" class="input" type="text" placeholder="Text input">
+            <input id="name" class="input" type="text" placeholder="Enter your name" aria-invalid="false" required>
           </div>
         </div>
 
         <div class="field">
           <label class="label" for="username">Username</label>
           <div class="control has-icons-left has-icons-right">
-            <input id="username" class="input is-success" type="text">
+            <input id="username" class="input is-success" type="text" placeholder="Enter your username" aria-invalid="false" required>
             <span class="icon is-small is-left">
               <span aria-hidden="true" class="fas fa-user"></span>
             </span>
@@ -912,7 +912,7 @@
         <div class="field">
           <label for="email" class="label">Email</label>
           <div class="control has-icons-left has-icons-right">
-            <input id="email" class="input is-danger" type="email" placeholder="Email input">
+            <input id="email" class="input is-danger" type="email" placeholder="Enter your email" aria-invalid="true" value="hello@" required>
             <span class="icon is-small is-left">
               <span aria-hidden="true" class="fas fa-envelope"></span>
             </span>
@@ -938,14 +938,14 @@
         <div class="field">
           <label class="label" for="message">Message</label>
           <div class="control">
-            <textarea id="message" class="textarea" placeholder="Textarea"></textarea>
+            <textarea id="message" class="textarea" placeholder="Enter your message"></textarea>
           </div>
         </div>
 
         <div class="field">
           <div class="control">
             <label class="checkbox">
-              <input type="checkbox">
+              <input type="checkbox" aria-checked="false">
               I agree to the <a href="#" class="link-fix">terms and conditions</a>
             </label>
           </div>
@@ -956,11 +956,11 @@
             <fieldset class="fieldset-fix">
               <legend class="visually-hidden"></legend>
               <label class="radio">
-                <input type="radio" name="question">
+                <input type="radio" name="question" aria-checked="false">
                 Yes
               </label>
               <label class="radio">
-                <input type="radio" name="question">
+                <input type="radio" name="question" aria-checked="false">
                 No
               </label>
             </fieldset>
