@@ -265,3 +265,12 @@ a.link-fix:focus,
 a.link-fix:active {
   text-decoration: underline;
 }
+
+#time-alert {
+  position: fixed;
+  bottom: 0px;
+  width: 500px;
+  margin-bottom: 0px;
+  left: 50%;
+  transform: translate(-50%);
+}
