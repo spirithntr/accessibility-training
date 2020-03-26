@@ -269,8 +269,6 @@ a.link-fix:active {
 #time-alert {
   position: fixed;
   bottom: 0px;
-  width: 500px;
+  min-width: 300px;
   margin-bottom: 0px;
-  left: 50%;
-  transform: translate(-50%);
 }

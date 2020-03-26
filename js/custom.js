@@ -36,3 +36,14 @@ function toggleTab(selectedNav, targetId) {
     }
   });
 }
+
+// aria - live
+(function() {
+  const notification = document.getElementById('time-alert')
+  notification.innerText = 'Welcome to accessibility homework'
+  let countOfMin = 0;
+  setInterval(() => {
+    countOfMin++;
+    notification.innerText = `You wasted ${60 * countOfMin} seconds of your life`
+  }, 60000)
+})();
