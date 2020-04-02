@@ -268,19 +268,19 @@
     </div>
     <div class="tabs is-boxed is-centered main-menu" id="nav">
       <ul role="tablist">
-        <li data-target="pane-1" id="1" class="is-active" role="tab">
+        <li data-target="pane-1" id="1" class="is-active" role="tab" aria-controls="pane-1" aria-selected="true">
           <a tabindex="0" class="tab-fix">
             <span class="icon is-small"><span class="fa fa-image" aria-hidden="true"></span></span>
             <span>Pictures</span>
           </a>
         </li>
-        <li data-target="pane-3" id="3" role="tab">
+        <li data-target="pane-3" id="3" role="tab" aria-controls="pane-3" aria-selected="false">
           <a tabindex="0" class="tab-fix">
             <span class="icon is-small"><span class="fab fa-superpowers" aria-hidden="true"></span></span>
             <span>Team</span>
           </a>
         </li>
-        <li data-target="pane-4" id="4" role="tab">
+        <li data-target="pane-4" id="4" role="tab" aria-controls="pane-4" aria-selected="false">
           <a tabindex="0" class="tab-fix">
             <span class="icon is-small"><span class="fa fa-film" aria-hidden="true"></span></span>
             <span>Video</span>
@@ -555,9 +555,9 @@
             <div class="card">
               <div class="card-header">
                 <p class="card-header-title">
-                  <span>Admin <small>(Light)</small></span>
+                  <span>Admin (Light)</span>
                   <span class="is-pulled-right">
-                    <a href="#">
+                    <a href="#" class="link-fix">
                       <span class="tag is-default">v0.7.2</span>
                     </a>
                     <span class="tag is-default">Desktop</span>
@@ -582,7 +582,7 @@
                 <p class="card-header-title">
                   <span>Cards</span>
                   <span class="is-pulled-right">
-                    <a href="#">
+                    <a href="#" class="link-fix">
                       <span class="tag is-default">v0.7.2</span>
                     </a>
                     <span class="tag is-default">Desktop</span>
@@ -607,7 +607,7 @@
                 <p class="card-header-title">
                   <span>Forum</span>
                   <span class="is-pulled-right">
-                    <a href="#">
+                    <a href="#" class="link-fix">
                       <span class="tag is-default">v0.7.2</span>
                     </a>
                     <span class="tag is-default">Desktop</span>
@@ -634,7 +634,7 @@
                 <p class="card-header-title">
                   <span>InstaAlbum</span>
                   <span class="is-pulled-right">
-                    <a href="#">
+                    <a href="#" class="link-fix">
                       <span class="tag is-default">v0.7.2</span>
                     </a>
                     <span class="tag is-default">Desktop</span>
@@ -659,7 +659,7 @@
                 <p class="card-header-title">
                   <span>Landing</span>
                   <span class="is-pulled-right">
-                    <a href="#">
+                    <a href="#" class="link-fix">
                       <span class="tag is-default">v0.7.2</span>
                     </a>
                     <span class="tag is-default">Desktop</span>
@@ -684,7 +684,7 @@
                 <p class="card-header-title">
                   <span>Marketing</span>
                   <span class="is-pulled-right">
-                    <a href="#">
+                    <a href="#" class="link-fix">
                       <span class="tag is-default">v0.7.2</span>
                     </a>
                     <span class="tag is-default">Desktop</span>
@@ -743,7 +743,7 @@
                 <div class="media-content">
                   <div class="content">
                     <p>
-                      <a href="#">@jsmith</a> replied 34 minutes ago &nbsp;
+                      <a href="#" class="link-fix">@jsmith</a> replied 34 minutes ago &nbsp;
                       <span class="tag">Question</span>
                     </p>
                   </div>
@@ -768,7 +768,7 @@
                 <div class="media-content">
                   <div class="content">
                     <p>
-                      <a href="#">@red</a> replied 40 minutes ago &nbsp;
+                      <a href="#" class="link-fix">@red</a> replied 40 minutes ago &nbsp;
                       <span class="tag">Question</span>
                     </p>
                   </div>
@@ -792,7 +792,7 @@
                 <div class="media-content">
                   <div class="content">
                     <p>
-                      <a href="#">@jsmith</a> replied 53 minutes ago &nbsp;
+                      <a href="#" class="link-fix">@jsmith</a> replied 53 minutes ago &nbsp;
                       <span class="tag">Question</span>
                     </p>
                   </div>
@@ -816,7 +816,7 @@
                 <div class="media-content">
                   <div class="content">
                     <p>
-                      <a href="#">@brown</a> replied 3 hours ago &nbsp;
+                      <a href="#" class="link-fix">@brown</a> replied 3 hours ago &nbsp;
                       <span class="tag">Question</span>
                     </p>
                   </div>
@@ -840,7 +840,7 @@
                 <div class="media-content">
                   <div class="content">
                     <p>
-                      <a href="#">@hamburgler</a> replied 5 hours ago &nbsp;
+                      <a href="#" class="link-fix">@hamburgler</a> replied 5 hours ago &nbsp;
                       <span class="tag">Question</span>
                     </p>
                   </div>
@@ -863,7 +863,7 @@
                 <div class="media-content">
                   <div class="content">
                     <p>
-                      <a href="#">@rapper</a> replied 3 hours ago &nbsp;
+                      <a href="#" class="link-fix">@rapper</a> replied 3 hours ago &nbsp;
                       <span class="tag">Question</span>
                     </p>
                   </div>
@@ -883,11 +883,11 @@
   <section aria-label="Contact us" class="section has-background-light">
     <div class="container">
       <div class="section-heading has-text-centered">
-        <h2 class="title is-2">Contact us</h2>
-        <div class="subtitle is-5">Don't hesitate, ask anything</div>
+        <h2 class="title is-2" id="contact-us-title">Contact us</h2>
+        <div class="subtitle is-5" id="contact-us-sub">Don't hesitate, ask anything</div>
       </div>
 
-      <form class="column is-half is-offset-one-quarter box">
+      <form class="column is-half is-offset-one-quarter box" aria-describedby="contact-us-title contact-us-sub">
         <div class="field">
           <label class="label" for="name">Name</label>
           <div class="control">
@@ -951,10 +951,11 @@
           </div>
         </div>
 
+        <!-- No idea what are these yes/no buttons are for, so I came up with that aria-label -->
         <div class="field">
           <div class="control">
-            <fieldset class="fieldset-fix">
-              <legend class="visually-hidden"></legend>
+            <fieldset class="fieldset-fix" role="radiogroup" aria-labelledby="contacts-visibility">
+              <legend id="contacts-visibility" class="visually-hidden">Make your contacts visible?</legend>
               <label class="radio">
                 <input type="radio" name="question" aria-checked="false">
                 Yes
@@ -1057,9 +1058,8 @@
     </div>
   </footer>
 
-  <div role="dialog" aria-label="Jane Doe story" id="modal-card" class="modal modal-fx-3dSlit" aria-labelledby="modal-card1-title">
+  <div role="dialog" aria-label="Jane Doe story" id="modal-card" class="modal modal-fx-3dSlit">
     <div class="modal-background"></div>
-    <h3 class="visually-hidden" id="modal-card1-title">Jane Doe story</h3>
     <div class="modal-content is-tiny">
       <div class="card">
         <div class="card-image">
