@@ -280,6 +280,10 @@ li {
   outline-offset: -3px;
 }
 
+.dropdown-item:focus {
+  outline-offset: -2px;
+}
+
 .fieldset-fix {
   border: none;
 }
@@ -379,3 +383,4 @@ button.dropdown-item.is-active {
   background-color: rgba(10, 10, 10, 0.1);
   color: #dedede;
 }
+
