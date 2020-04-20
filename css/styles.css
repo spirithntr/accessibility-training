@@ -2,10 +2,10 @@
   --main-color: #2d37c2;
 }
 .has-background-grey-light {
-  background-color: #dedede!important;
+  background-color: #dedede !important;
 }
 .has-text-grey-light {
-  color: #585858!important;
+  color: #585858 !important;
 }
 .tag:not(body).is-primary {
   background-color: #006d26;
@@ -14,19 +14,21 @@
   background-color: #50775e;
 }
 .tag:not(body).is-danger {
-    background-color: #a00020;
+  background-color: #a00020;
 }
 .help.is-danger {
   color: #a00020;
 }
-.input.is-danger, .textarea.is-danger {
-    border-color: #a00020;
+.input.is-danger,
+.textarea.is-danger {
+  border-color: #a00020;
 }
 .help.is-success {
   color: #50775e;
 }
-.input.is-success, .textarea.is-success {
-    border-color: #50775e;
+.input.is-success,
+.textarea.is-success {
+  border-color: #50775e;
 }
 :focus {
   outline: 2px solid #dc7632;
@@ -38,7 +40,46 @@ button:focus {
   outline: 2px solid #dc7632;
 }
 
-.button:active,.button:focus,.file-cta:active,.file-cta:focus,.file-name:active,.file-name:focus,.input:active,.input:focus,.is-active.button,.is-active.file-cta,.is-active.file-name,.is-active.input,.is-active.pagination-ellipsis,.is-active.pagination-link,.is-active.pagination-next,.is-active.pagination-previous,.is-active.textarea,.is-focused.button,.is-focused.file-cta,.is-focused.file-name,.is-focused.input,.is-focused.pagination-ellipsis,.is-focused.pagination-link,.is-focused.pagination-next,.is-focused.pagination-previous,.is-focused.textarea,.pagination-ellipsis:active,.pagination-ellipsis:focus,.pagination-link:active,.pagination-link:focus,.pagination-next:active,.pagination-next:focus,.pagination-previous:active,.pagination-previous:focus,.select select.is-active,.select select.is-focused,.select select:active,.select select:focus,.textarea:active,.textarea:focus {
+.button:active,
+.button:focus,
+.file-cta:active,
+.file-cta:focus,
+.file-name:active,
+.file-name:focus,
+.input:active,
+.input:focus,
+.is-active.button,
+.is-active.file-cta,
+.is-active.file-name,
+.is-active.input,
+.is-active.pagination-ellipsis,
+.is-active.pagination-link,
+.is-active.pagination-next,
+.is-active.pagination-previous,
+.is-active.textarea,
+.is-focused.button,
+.is-focused.file-cta,
+.is-focused.file-name,
+.is-focused.input,
+.is-focused.pagination-ellipsis,
+.is-focused.pagination-link,
+.is-focused.pagination-next,
+.is-focused.pagination-previous,
+.is-focused.textarea,
+.pagination-ellipsis:active,
+.pagination-ellipsis:focus,
+.pagination-link:active,
+.pagination-link:focus,
+.pagination-next:active,
+.pagination-next:focus,
+.pagination-previous:active,
+.pagination-previous:focus,
+.select select.is-active,
+.select select.is-focused,
+.select select:active,
+.select select:focus,
+.textarea:active,
+.textarea:focus {
   outline: 2px solid #dc7632;
 }
 
@@ -128,14 +169,13 @@ button:focus {
   box-shadow: 0 10px 16px rgba(0, 0, 0, 0.13), 0 6px 6px rgba(0, 0, 0, 0.19);
 }
 
-
 .has-same-height .card {
   height: 350px;
   overflow: hidden;
 }
 
 .skills-content .media + .media {
-  margin-top: .5rem;
+  margin-top: 0.5rem;
 }
 
 .skills-content .progress {
@@ -147,8 +187,8 @@ button:focus {
 }
 
 .info-tiles {
-  margin: .75rem auto;
-  padding: 0 .75rem;
+  margin: 0.75rem auto;
+  padding: 0 0.75rem;
 }
 
 .button.is-primary.is-alt {
@@ -162,7 +202,7 @@ button:focus {
 .post {
   margin: 1rem;
   padding-bottom: 1rem;
-  border-bottom: 1px solid #E6EAEE;
+  border-bottom: 1px solid #e6eaee;
 }
 .post:last-child {
   padding-bottom: 0;
@@ -170,9 +210,8 @@ button:focus {
 }
 
 .forum-list li {
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
-
 
 @media screen and (max-width: 1087px) {
   .navbar-menu {
@@ -221,14 +260,14 @@ li {
   background-size: contain;
 }
 
-.visually-hidden { 
-    position: absolute !important;
-    height: 1px; 
-    width: 1px;
-    overflow: hidden;
-    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
-    clip: rect(1px, 1px, 1px, 1px);
-    white-space: nowrap; /* added line */
+.visually-hidden {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  white-space: nowrap; /* added line */
 }
 
 .visually-hidden:focus {
@@ -241,22 +280,34 @@ li {
   outline-offset: -3px;
 }
 
+.dropdown-item:focus {
+  outline-offset: -2px;
+}
+
 .fieldset-fix {
   border: none;
 }
 
-a, a.link-fix, li.is-active, .features .fa, .features .fab {
+a,
+a.link-fix,
+li.is-active,
+.features .fa,
+.features .fab,
+button.is-active {
   color: var(--main-color);
 }
 
-.soc a, .hero.is-info .tabs.is-boxed li.is-active a, .hero.is-info .tabs.is-boxed li.is-active a:hover, .hero.is-info .tabs.is-toggle li.is-active a, .hero.is-info .tabs.is-toggle li.is-active a:hover {
+.soc a,
+.hero.is-info .tabs.is-boxed li.is-active a,
+.hero.is-info .tabs.is-boxed li.is-active a:hover,
+.hero.is-info .tabs.is-toggle li.is-active a,
+.hero.is-info .tabs.is-toggle li.is-active a:hover {
   color: var(--main-color);
 }
 
 .button.is-link,
 .button.is-info,
-.hero.is-info 
-{
+.hero.is-info {
   background-color: var(--main-color);
 }
 
@@ -272,3 +323,64 @@ a.link-fix:active {
   min-width: 300px;
   margin-bottom: 0px;
 }
+
+.dropdown-menu {
+  min-width: 10rem;
+}
+
+a.dropdown-item.is-active,
+button.dropdown-item.is-active {
+  background-color: var(--main-color);
+}
+
+.hero.is-info .tabs.is-boxed button {
+  border-radius: 4px 4px 0 0;
+  border: 1px solid transparent;
+  padding-bottom: -5px;
+}
+
+.hero.is-info .tabs.is-boxed button.is-active {
+  border-radius: 4px 4px 0 0;
+  border: 1px solid transparent;
+  background-color: #fff;
+  border-color: #fff;
+}
+
+.tabs {
+  justify-content: center;
+}
+
+.tabs button {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  border-bottom-color: var(--main-color);
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  background-color: var(--main-color);
+  color: #fff;
+  justify-content: center;
+  margin-bottom: 1px;
+  padding: 0.5em 1em;
+  vertical-align: top;
+  font-size: 1rem;
+  outline-offset: -3px;
+}
+
+.tabs button.is-active {
+  border-bottom-color: #fff;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  color: var(--main-color);
+}
+
+.tabs.is-centered .tablist {
+  justify-content: center;
+}
+
+.hero.is-info .tabs.is-boxed button:hover,
+.hero.is-info .tabs.is-toggle a:hover {
+  background-color: rgba(10, 10, 10, 0.1);
+  color: #dedede;
+}
+
